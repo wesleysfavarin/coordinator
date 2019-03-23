@@ -15,6 +15,11 @@
 		0481EC65224678110007AE33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0481EC63224678110007AE33 /* LaunchScreen.storyboard */; };
 		0481EC70224678110007AE33 /* CoordinatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481EC6F224678110007AE33 /* CoordinatorsTests.swift */; };
 		0481EC7B224678110007AE33 /* CoordinatorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481EC7A224678110007AE33 /* CoordinatorsUITests.swift */; };
+		0481EC89224679180007AE33 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481EC88224679180007AE33 /* Coordinator.swift */; };
+		0481EC8B224679BC0007AE33 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481EC8A224679BC0007AE33 /* Storyboarded.swift */; };
+		0481EC8D22467BEA0007AE33 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481EC8C22467BEA0007AE33 /* MainCoordinator.swift */; };
+		0481EC8F2246827A0007AE33 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481EC8E2246827A0007AE33 /* BuyViewController.swift */; };
+		0481EC912246829A0007AE33 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481EC902246829A0007AE33 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		0481EC76224678110007AE33 /* CoordinatorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0481EC7A224678110007AE33 /* CoordinatorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorsUITests.swift; sourceTree = "<group>"; };
 		0481EC7C224678110007AE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0481EC88224679180007AE33 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0481EC8A224679BC0007AE33 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		0481EC8C22467BEA0007AE33 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		0481EC8E2246827A0007AE33 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		0481EC902246829A0007AE33 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,11 @@
 				0481EC63224678110007AE33 /* LaunchScreen.storyboard */,
 				0481EC66224678110007AE33 /* Info.plist */,
 				0481EC5E2246780F0007AE33 /* Coordinators.xcdatamodeld */,
+				0481EC88224679180007AE33 /* Coordinator.swift */,
+				0481EC8A224679BC0007AE33 /* Storyboarded.swift */,
+				0481EC8C22467BEA0007AE33 /* MainCoordinator.swift */,
+				0481EC8E2246827A0007AE33 /* BuyViewController.swift */,
+				0481EC902246829A0007AE33 /* CreateAccountViewController.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -259,8 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0481EC89224679180007AE33 /* Coordinator.swift in Sources */,
+				0481EC8D22467BEA0007AE33 /* MainCoordinator.swift in Sources */,
 				0481EC602246780F0007AE33 /* Coordinators.xcdatamodeld in Sources */,
+				0481EC8B224679BC0007AE33 /* Storyboarded.swift in Sources */,
+				0481EC912246829A0007AE33 /* CreateAccountViewController.swift in Sources */,
 				0481EC5A2246780F0007AE33 /* ViewController.swift in Sources */,
+				0481EC8F2246827A0007AE33 /* BuyViewController.swift in Sources */,
 				0481EC582246780F0007AE33 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
