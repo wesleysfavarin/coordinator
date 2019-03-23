@@ -18,21 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivw-KS-Big">
-                                <rect key="frame" x="16" y="367" width="343" height="40"/>
-                                <color key="backgroundColor" red="0.9333770871" green="0.53525292869999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="yqh-XO-9Kq"/>
-                                </constraints>
-                                <state key="normal" title="Criar conta">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="CreateAccontTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9R-CO-YtM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rh4-bg-0fe">
-                                <rect key="frame" x="16" y="296" width="343" height="40"/>
+                                <rect key="frame" x="16" y="281" width="343" height="40"/>
                                 <color key="backgroundColor" red="0.23797559739999999" green="0.053662583229999998" blue="0.1657859683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="IcI-PO-YHJ"/>
@@ -44,19 +31,50 @@
                                     <action selector="BuyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e05-cW-7WO"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UZF-Ec-kBg">
+                                <rect key="frame" x="16" y="231" width="343" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Nph-Qd-Gq4"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Comprar"/>
+                                    <segment title="Criar conta"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changePge:" destination="BYZ-38-t0r" eventType="valueChanged" id="BEg-Qm-rHs"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivw-KS-Big">
+                                <rect key="frame" x="16" y="338" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.9333770871" green="0.53525292869999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yqh-XO-9Kq"/>
+                                </constraints>
+                                <state key="normal" title="Criar conta">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="CreateAccontTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9R-CO-YtM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rh4-bg-0fe" firstAttribute="top" secondItem="UZF-Ec-kBg" secondAttribute="bottom" constant="20" id="3pl-RV-odn"/>
                             <constraint firstItem="ivw-KS-Big" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6Sr-at-yhL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ivw-KS-Big" secondAttribute="bottom" constant="260" id="Lg1-Qr-Tfr"/>
+                            <constraint firstItem="UZF-Ec-kBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7aD-Cs-s9K"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rh4-bg-0fe" secondAttribute="trailing" constant="16" id="X7o-3r-I1n"/>
+                            <constraint firstItem="UZF-Ec-kBg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="211" id="YII-Wl-Qyq"/>
+                            <constraint firstItem="ivw-KS-Big" firstAttribute="top" secondItem="rh4-bg-0fe" secondAttribute="bottom" constant="17" id="gvI-dp-aGY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ivw-KS-Big" secondAttribute="trailing" constant="16" id="mi7-Ob-Om4"/>
                             <constraint firstItem="rh4-bg-0fe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nIB-nj-egg"/>
-                            <constraint firstItem="rh4-bg-0fe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="276" id="sWh-d6-yNJ"/>
-                            <constraint firstItem="ivw-KS-Big" firstAttribute="top" secondItem="rh4-bg-0fe" secondAttribute="bottom" priority="250" constant="31" id="zkN-SM-rmO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UZF-Ec-kBg" secondAttribute="trailing" constant="16" id="vja-UD-CIK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="product" destination="UZF-Ec-kBg" id="i8e-IV-bV0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
